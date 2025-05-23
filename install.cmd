@@ -8,7 +8,7 @@ cd C:\Windows\System32
 echo test>test.test
 if not exist test.test (
     cls
-    echo Please run this script as administrator.
+    echo Please run PowerShell as administrator.
     pause
     exit
 )
