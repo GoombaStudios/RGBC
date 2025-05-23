@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGBC - Windows Terminal Color Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>RGBC</h1>
+    <p>Customize your Windows Terminal with any RGB or HEX color</p>
+  </header>
+
+  <div class="slider-container" id="slider">
+  <img src="before.jpg" alt="Before" />
+  <div class="slider-overlay" id="overlay">
+    <img src="after.jpg" alt="After" />
+  </div>
+  <div class="divider"></div>  <!-- <-- ADD THIS -->
+</div>
+
+
+  <section class="install">
+    <h2>Install Now</h2>
+    <p>Run this command in PowerShell as Administrator:</p>
+    <div class="code-box">
+      <code id="code">iwr "https://raw.githubusercontent.com/GoombaStudios/RGBC/refs/heads/code/install.ps1" | iex</code>
+      <button id="copyBtn">Copy</button>
+    </div>
+  </section>
+
+  <section class="syntax">
+    <h2>Usage Syntax</h2>
+    <ul>
+      <li><code>rgbc &lt;#HEX&gt;</code></li>
+      <li><code>rgbc &lt;R&gt; &lt;G&gt; &lt;B&gt;</code></li>
+      <li><code>rgbc /?</code></li>
+      <li><code>rgbc /r</code> (resets console)</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Goomba. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

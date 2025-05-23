@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #F5ACFF;
+  margin-bottom: 0;
+}
+
+header p {
+  color: #bbb;
+  font-size: 1.2em;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+  aspect-ratio: 992 / 524;
+  overflow: hidden;
+  margin: 40px auto;
+  cursor: ew-resize;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.slider-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 50% 0, 35% 100%, 0% 100%);
+  pointer-events: none;
+  border-right: 2px solid #F5ACFF;
+  transition: none;
+}
+
+.install {
+  margin-top: 60px;
+}
+
+.install h2 {
+  color: #F5ACFF;
+}
+
+.code-box {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  border: 1px solid #F5ACFF;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 10px;
+}
+
+.code-box code {
+  color: #F5ACFF;
+  font-family: monospace;
+  font-size: 0.95em;
+  user-select: all;
+}
+
+#copyBtn {
+  margin-left: 12px;
+  background-color: #F5ACFF;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  transition: background 0.3s;
+}
+
+#copyBtn:hover {
+  background-color: #e896ef;
+}
+
+.syntax {
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+.syntax h2 {
+  color: #F5ACFF;
+  margin-bottom: 20px;
+}
+
+.syntax ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  line-height: 1.8em;
+}
+
+.syntax li code {
+  background-color: #1a1a1a;
+  color: #F5ACFF;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #777;
+  border-top: 1px solid #222;
+}
